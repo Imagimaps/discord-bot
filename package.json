@@ -1,20 +1,20 @@
 {
 	"name": "imagimaps-discord-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsup src/index.ts --minify",
-    "deploy-commands": "ts-node src/deploy-commands.ts",
-    "dev": "dotenv -e .env.local -- nodemon src/index.ts | pino-pretty",
-    "lint": "eslint src/.",
-    "start": "node src/index.ts",
-    "test": "vitest run",
-    "test:watch": "vitest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsup src/index.ts --minify",
+		"deploy-commands": "ts-node src/deploy-commands.ts",
+		"dev": "dotenv -e .env.local -- nodemon src/index.ts | pino-pretty",
+		"lint": "eslint src/.",
+		"start": "node src/index.ts",
+		"test": "vitest run",
+		"test:watch": "vitest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
 	"dependencies": {
 		"discord.js": "^14.17.3",
 		"dotenv": "^16.4.7",
@@ -24,6 +24,7 @@
 	"packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
 	"devDependencies": {
 		"@eslint/js": "^9.18.0",
+		"@types/node": "^22.10.7",
 		"eslint": "^9.18.0",
 		"globals": "^15.14.0",
 		"jsdom": "^26.0.0",
